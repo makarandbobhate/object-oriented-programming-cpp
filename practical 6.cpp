@@ -1,3 +1,11 @@
+/**
+ * @file practical 6.cpp
+ * @author Makarand Pankaj Bobhate (Roll No: 09, Div: 5)
+ * @institution MIT ADT University, School of AI
+ * @course Object Oriented Programming (OOPS)
+ * @brief Practical 6: Employee Details (Constructors & Destructors Lifecycle)
+ */
+
 #include <iostream>
 #include <string>
 

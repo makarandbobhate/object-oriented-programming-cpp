@@ -1,3 +1,11 @@
+/**
+ * @file practical 1.cpp
+ * @author Makarand Pankaj Bobhate (Roll No: 09, Div: 5)
+ * @institution MIT ADT University, School of AI
+ * @course Object Oriented Programming (OOPS)
+ * @brief Practical 1: Digital Book Inventory System (Classes & Objects)
+ */
+
 #include <iostream>
 #include <string>
 

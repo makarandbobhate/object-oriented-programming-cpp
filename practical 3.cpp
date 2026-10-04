@@ -1,3 +1,11 @@
+/**
+ * @file practical 3.cpp
+ * @author Makarand Pankaj Bobhate (Roll No: 09, Div: 5)
+ * @institution MIT ADT University, School of AI
+ * @course Object Oriented Programming (OOPS)
+ * @brief Practical 3: Employee Record System (Encapsulation & Access Control)
+ */
+
 #include <iostream>
 #include <string>
 

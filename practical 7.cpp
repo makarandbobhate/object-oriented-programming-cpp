@@ -1,3 +1,11 @@
+/**
+ * @file practical 7.cpp
+ * @author Makarand Pankaj Bobhate (Roll No: 09, Div: 5)
+ * @institution MIT ADT University, School of AI
+ * @course Object Oriented Programming (OOPS)
+ * @brief Practical 7: Person & Student (Single Inheritance)
+ */
+
 #include <iostream>
 #include <string>
 
