@@ -1,54 +1,113 @@
 <div align="center">
-  <h1>💻 Object Oriented Programming (OOPS) Practicals</h1>
-  <p><i>A comprehensive collection of C++ programs demonstrating core Object-Oriented Programming concepts.</i></p>
+
+# 🏛️ Object-Oriented Programming in C++
+### Practical Laboratory Portfolio & Implementation Log
+
+[![Language](https://img.shields.io/badge/Language-C%2B%2B17%20%2F%20C%2B%2B20-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)](https://en.cppreference.com/)
+[![Standard](https://img.shields.io/badge/Standard-ISO%2FIEC%2014882-blue?style=for-the-badge)](https://isocpp.org/)
+[![Compiler](https://img.shields.io/badge/Compiler-GCC%20%7C%20Clang%20%7C%20MSVC-orange?style=for-the-badge)](https://gcc.gnu.org/)
+[![Platform](https://img.shields.io/badge/Platform-Cross--Platform-lightgrey?style=for-the-badge)](https://github.com/makarandbobhate/object-oriented-programming-cpp)
+
+<p align="center">
+  A structured, modular laboratory repository illustrating fundamental-to-advanced paradigms of <b>Object-Oriented Programming (OOP)</b> in modern C++, focusing on real-world systems modeling, clean code architecture, and memory lifecycle discipline.
+</p>
+
 </div>
 
-<hr>
+---
 
-## 👨‍🎓 Author Profile
-- **Name:** Makarand Pankaj Bobhate
-- **Roll No:** 09
-- **Class:** SO AI
-- **Division:** 5
-- **Subject:** Object Oriented Programming (OOPS)
+## 📌 Student & Academic Profile
+
+| Attribute | Details |
+| :--- | :--- |
+| **Candidate Name** | **Makarand Pankaj Bobhate** |
+| **Roll Number** | `09` |
+| **Department / Class** | School of AI (SO AI) |
+| **Division** | Division 5 |
+| **Course Module** | Object Oriented Programming Systems (OOPS) |
+| **Programming Language** | C++ |
 
 ---
 
-## 🎯 Repository Overview
-This repository serves as a practical implementation log for the OOPS curriculum. It focuses on translating theoretical object-oriented principles—such as encapsulation, inheritance, and abstraction—into functional C++ code.
+## 🎯 Curriculum Objectives & Competencies
+
+This laboratory suite targets mastery over foundational software engineering principles:
+* **Encapsulation & Access Control:** Information hiding using `private`, `protected`, and `public` specifiers to safeguard state integrity.
+* **Object Lifecycle Management:** Deterministic resource initialization via default, parameterized, and copy constructors; systematic destruction via RAII-compliant destructors.
+* **Scope Resolution & Disambiguation:** Resolving namespace and attribute collisions using the implicit `this` pointer.
+* **Polymorphic & Hierarchical Architecture:** Code reuse and extensible taxonomies via Single, Multilevel, and Hierarchical inheritance models.
 
 ---
 
-## 📂 Index of Practicals
+## 📑 Lab Practicals Index
 
-| Practical | Concept Covered | Problem Statement |
-| :---: | :--- | :--- |
-| **[Practical 1](practical%201.cpp)** | **Classes & Objects** | A bookstore is introducing a digital inventory system to organize its collection of books. Design a Book class that stores essential book details and allows the staff to record and display the information whenever required. |
-| **[Practical 2](practical%202.cpp)** | **Array of Objects** | College record digitization system managing multiple student entries. |
-| **[Practical 3](practical%203.cpp)** | **Encapsulation** | The Human Resources department needs a simple application to organize employee information. Design an Employee class that stores employee details and enables authorized staff to view the stored information whenever required. |
-| **[Practical 4](practical%204.cpp)** | **Constructors** | Bookstore simulation utilizing both Default and Parameterized constructors. |
-| **[Practical 5](practical%205.cpp)** | **The `this` Pointer** | A college admission portal allows students to update their profiles online. Design a student class that correctly assigns the submitted details to the respective data members, even when the input variable names are the same as the class attributes. *(Includes `_input` variant)*. |
-| **[Practical 6](practical%206.cpp)** | **Destructors** | An HR application creates employee records temporarily while processing recruitment data. Design an Employee class that displays appropriate messages when employee records are created and automatically removed from memory after processing is completed. *(Includes `_input` variant)*. |
-| **[Practical 7](practical%207.cpp)** | **Single Inheritance** | Hierarchical link between a base `Person` class and a derived `Student` class. |
-| **[Practical 8](practical%208.cpp)** | **Multilevel Inheritance** | An organization maintains records of its workforce. Every manager is an employee, and every employee is a person. Design an application that progressively extends the available information at each level while reusing the common details already defined. |
-| **[Practical 9](practical%209.cpp)** | **Hierarchical Inheritance** | A transport management system maintains common information for all vehicles while storing additional details specific to different vehicle categories. Design an application that organizes these records efficiently using inheritance. |
+| Practical | Core OOP Paradigm | Problem Statement & Specification | Code Source |
+| :---: | :--- | :--- | :---: |
+| **01** | **Classes & Objects** | **Digital Book Inventory System:** Design a standalone `Book` entity capturing ISBN, metadata, and price with secure I/O streams. | [`practical 1.cpp`](./practical%201.cpp) |
+| **02** | **Array of Objects** | **College Record Digitization:** Array-driven database for record management, input parsing, dynamic iteration, and roll number search. | [`practical 2.cpp`](./practical%202.cpp) |
+| **03** | **Data Encapsulation** | **HR Access Control System:** Private attribute isolation in an `Employee` entity with role-gated access methods enforcing authorization boundaries. | [`practical 3.cpp`](./practical%203.cpp) |
+| **04** | **Constructors** | **Constructors Overloading:** Bookstore module evaluating explicit initialization paths using default and parameterized constructors. | [`practical 4.cpp`](./practical%204.cpp) |
+| **05** | **The `this` Pointer** | **Online Admissions Portal:** Attribute-parameter identifier collision resolution within constructor scope using explicit `this->` reference. | [`practical 5.cpp`](./practical%205.cpp)<br>*(Input: [`5_input.cpp`](./practical%205_input.cpp))* |
+| **06** | **Destructors & Lifecycle** | **Recruitment Pipeline Buffer:** Demonstrating deterministic memory release and notification events during stack unwinding and scope termination. | [`practical 6.cpp`](./practical%206.cpp)<br>*(Input: [`6_input.cpp`](./practical%206_input.cpp))* |
+| **07** | **Single Inheritance** | **Academic Hierarchy:** Derivation of `Student` from base `Person`, inheriting personal attributes while augmenting academic-specific fields. | [`practical 7.cpp`](./practical%207.cpp) |
+| **08** | **Multilevel Inheritance** | **Workforce Hierarchy:** Multi-tier architectural inheritance pattern extending `Person` ➔ `Employee` ➔ `Manager` across layered data planes. | [`practical 8.cpp`](./practical%208.cpp) |
+| **09** | **Hierarchical Inheritance** | **Fleet Management System:** Single generalized base specification (`Vehicle`) branching into specialized domains (`Car`, `Truck`). | [`practical 9.cpp`](./practical%209.cpp) |
 
 ---
 
-## ⚙️ Compilation & Execution
+## 🛠️ Build & Execution Instructions
 
-These programs are written in standard C++ and can be executed via any modern compiler (GCC, MSVC, Clang).
+All practical files are self-contained and require standard ISO C++ compilation.
 
-**Using GCC (`g++`):**
+### Prerequisites
+* **Compiler:** `g++` (MinGW-w64 on Windows or native GCC on Linux/macOS) / `clang++` / `MSVC (cl.exe)`
+* **Terminal:** PowerShell, Command Prompt, or Bash
+
+### Compilation Command
+
 ```bash
-# Compile the file
-g++ "practical 1.cpp" -o output.exe
+# General syntax
+g++ -std=c++17 -Wall -Wextra "practical <N>.cpp" -o output
 
-# Run the executable
+# Windows execution
 ./output.exe
+
+# Linux/macOS execution
+./output
 ```
 
-<hr>
+#### Example (Practical 1):
+```bash
+g++ -std=c++17 "practical 1.cpp" -o book_inventory
+./book_inventory
+```
+
+---
+
+## 📁 Repository Directory Structure
+
+```text
+object-oriented-programming-cpp/
+├── .gitignore               # Ignores build artifacts, executables (.exe, .o), and IDE configs
+├── README.md                # Comprehensive documentation and practical directory
+├── practical 1.cpp          # Practical 1: Classes & Objects
+├── practical 2.cpp          # Practical 2: Array of Objects
+├── practical 3.cpp          # Practical 3: Encapsulation & Data Hiding
+├── practical 4.cpp          # Practical 4: Default & Parameterized Constructors
+├── practical 5.cpp          # Practical 5: 'this' Pointer Disambiguation
+├── practical 5_input.cpp    # Practical 5: Interactive Input Variant
+├── practical 6.cpp          # Practical 6: Destructors & Scope Destruction
+├── practical 6_input.cpp    # Practical 6: Interactive Input Variant
+├── practical 7.cpp          # Practical 7: Single Inheritance
+├── practical 8.cpp          # Practical 8: Multilevel Inheritance
+└── practical 9.cpp          # Practical 9: Hierarchical Inheritance
+```
+
+---
+
 <div align="center">
-  <i>Maintained by Makarand Bobhate</i>
+
+Developed & maintained by **[Makarand Bobhate](https://github.com/makarandbobhate)**<br>
+<sub>Released for academic reference and software engineering practice.</sub>
+
 </div>
