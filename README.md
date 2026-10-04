@@ -1,38 +1,54 @@
-# Object Oriented Programming (OOP) Practicals
+<div align="center">
+  <h1>💻 Object Oriented Programming (OOPS) Practicals</h1>
+  <p><i>A comprehensive collection of C++ programs demonstrating core Object-Oriented Programming concepts.</i></p>
+</div>
 
-This repository contains C++ practical assignments demonstrating core Object-Oriented Programming principles.
+<hr>
 
-## 🚀 About the Repository
+## 👨‍🎓 Author Profile
+- **Name:** Makarand Pankaj Bobhate
+- **Roll No:** 09
+- **Class:** SO AI
+- **Division:** 5
+- **Subject:** Object Oriented Programming (OOPS)
 
-These practicals demonstrate core concepts of Object-Oriented Programming using C++, including:
-- Classes and Objects
-- Constructors and Destructors
-- Inheritance (Single, Multilevel, Hierarchical)
-- Encapsulation and Data Hiding
-- Input/Output Streams
+---
 
-## 📂 File Structure
+## 🎯 Repository Overview
+This repository serves as a practical implementation log for the OOPS curriculum. It focuses on translating theoretical object-oriented principles—such as encapsulation, inheritance, and abstraction—into functional C++ code.
 
-| File | Description |
-|------|-------------|
-| `practical 1.cpp` | Digital Book Inventory System (Classes & Objects) |
-| `practical 2.cpp` | College Record Digitization System (Array of Objects) |
-| `practical 3.cpp` | Employee Record System (Encapsulation / Access Control) |
-| `practical 4.cpp` | Book Store (Default & Parameterized Constructors) |
-| `practical 5.cpp` | Student Details (Constructors with `this` pointer) |
-| `practical 5_input.cpp` | Student Details with User Input |
-| `practical 6.cpp` | Employee Details (Constructors & Destructors) |
-| `practical 6_input.cpp` | Employee Details with User Input |
-| `practical 7.cpp` | Person & Student (Single Inheritance) |
-| `practical 8.cpp` | Employee & Manager (Multilevel Inheritance) |
-| `practical 9.cpp` | Vehicle, Car, Truck (Hierarchical Inheritance) |
+---
 
-## 🛠️ How to Compile and Run
+## 📂 Index of Practicals
 
-To compile any of the practical files, you can use a C++ compiler like `g++`:
+| Practical | Concept Covered | Brief Description |
+| :---: | :--- | :--- |
+| **[Practical 1](practical%201.cpp)** | **Classes & Objects** | Digital book inventory system capturing basic I/O operations. |
+| **[Practical 2](practical%202.cpp)** | **Array of Objects** | College record digitization system managing multiple student entries. |
+| **[Practical 3](practical%203.cpp)** | **Encapsulation** | Employee record system demonstrating private access and authorized data retrieval. |
+| **[Practical 4](practical%204.cpp)** | **Constructors** | Bookstore simulation utilizing both Default and Parameterized constructors. |
+| **[Practical 5](practical%205.cpp)** | **The `this` Pointer** | Student detail management showcasing constructor scope resolution. *(Includes an interactive `_input` variant)*. |
+| **[Practical 6](practical%206.cpp)** | **Destructors** | Employee details system tracking object creation and automated memory cleanup. *(Includes an interactive `_input` variant)*. |
+| **[Practical 7](practical%207.cpp)** | **Single Inheritance** | Hierarchical link between a base `Person` class and a derived `Student` class. |
+| **[Practical 8](practical%208.cpp)** | **Multilevel Inheritance** | Multi-tier class structure: `Person` ➔ `Employee` ➔ `Manager`. |
+| **[Practical 9](practical%209.cpp)** | **Hierarchical Inheritance** | One base class (`Vehicle`) branching into multiple derived classes (`Car`, `Truck`). |
 
+---
+
+## ⚙️ Compilation & Execution
+
+These programs are written in standard C++ and can be executed via any modern compiler (GCC, MSVC, Clang).
+
+**Using GCC (`g++`):**
 ```bash
-g++ "practical 1.cpp" -o output
-./output
+# Compile the file
+g++ "practical 1.cpp" -o output.exe
+
+# Run the executable
+./output.exe
 ```
-*(On Windows, you can just run `output.exe` instead of `./output`)*
+
+<hr>
+<div align="center">
+  <i>Maintained by Makarand Bobhate</i>
+</div>
