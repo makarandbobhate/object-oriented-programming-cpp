@@ -50,9 +50,9 @@ This laboratory suite targets mastery over foundational software engineering pri
 | **04** | **Constructors** | **Constructors Overloading:** Bookstore module evaluating explicit initialization paths using default and parameterized constructors. | [`practical 4.cpp`](./practical%204.cpp) |
 | **05** | **The `this` Pointer** | **Online Admissions Portal:** Attribute-parameter identifier collision resolution within constructor scope using explicit `this->` reference. | [`practical 5.cpp`](./practical%205.cpp)<br>*(Input: [`5_input.cpp`](./practical%205_input.cpp))* |
 | **06** | **Destructors & Lifecycle** | **Recruitment Pipeline Buffer:** Demonstrating deterministic memory release and notification events during stack unwinding and scope termination. | [`practical 6.cpp`](./practical%206.cpp)<br>*(Input: [`6_input.cpp`](./practical%206_input.cpp))* |
-| **07** | **Single Inheritance** | **Academic Hierarchy:** Derivation of `Student` from base `Person`, inheriting personal attributes while augmenting academic-specific fields. | [`practical 7.cpp`](./practical%207.cpp) |
-| **08** | **Multilevel Inheritance** | **Workforce Hierarchy:** Multi-tier architectural inheritance pattern extending `Person` ➔ `Employee` ➔ `Manager` across layered data planes. | [`practical 8.cpp`](./practical%208.cpp) |
-| **09** | **Hierarchical Inheritance** | **Fleet Management System:** Single generalized base specification (`Vehicle`) branching into specialized domains (`Car`, `Truck`). | [`practical 9.cpp`](./practical%209.cpp) |
+| **07** | **Single Inheritance** | **Academic Hierarchy:** Derivation of `Student` from base `Person`, inheriting personal attributes while augmenting academic-specific fields. | [`practical 7.cpp`](./practical%207.cpp)<br>*(Input: [`7_input.cpp`](./practical%207_input.cpp))* |
+| **08** | **Multilevel Inheritance** | **Workforce Hierarchy:** Multi-tier architectural inheritance pattern extending `Person` ➔ `Employee` ➔ `Manager` across layered data planes. | [`practical 8.cpp`](./practical%208.cpp)<br>*(Input: [`8_input.cpp`](./practical%208_input.cpp))* |
+| **09** | **Hierarchical Inheritance** | **Fleet Management System:** Single generalized base specification (`Vehicle`) branching into specialized domains (`Car`, `Truck`). | [`practical 9.cpp`](./practical%209.cpp)<br>*(Input: [`9_input.cpp`](./practical%209_input.cpp))* |
 
 ---
 
@@ -100,8 +100,11 @@ object-oriented-programming-cpp/
 ├── practical 6.cpp          # Practical 6: Destructors & Scope Destruction
 ├── practical 6_input.cpp    # Practical 6: Interactive Input Variant
 ├── practical 7.cpp          # Practical 7: Single Inheritance
+├── practical 7_input.cpp    # Practical 7: Interactive Input Variant
 ├── practical 8.cpp          # Practical 8: Multilevel Inheritance
-└── practical 9.cpp          # Practical 9: Hierarchical Inheritance
+├── practical 8_input.cpp    # Practical 8: Interactive Input Variant
+├── practical 9.cpp          # Practical 9: Hierarchical Inheritance
+└── practical 9_input.cpp    # Practical 9: Interactive Input Variant
 ```
 
 ---
