@@ -47,7 +47,7 @@ This laboratory suite targets mastery over foundational software engineering pri
 | **01** | **Classes & Objects** | **Digital Book Inventory System:** Design a standalone `Book` entity capturing ISBN, metadata, and price with secure I/O streams. | [`practical 1.cpp`](./practical%201.cpp) |
 | **02** | **Array of Objects** | **College Record Digitization:** Array-driven database for record management, input parsing, dynamic iteration, and roll number search. | [`practical 2.cpp`](./practical%202.cpp) |
 | **03** | **Data Encapsulation** | **HR Access Control System:** Private attribute isolation in an `Employee` entity with role-gated access methods enforcing authorization boundaries. | [`practical 3.cpp`](./practical%203.cpp) |
-| **04** | **Constructors** | **Constructors Overloading:** Bookstore module evaluating explicit initialization paths using default and parameterized constructors. | [`practical 4.cpp`](./practical%204.cpp) |
+| **04** | **Constructors** | **Constructors Overloading:** Bookstore module evaluating explicit initialization paths using default and parameterized constructors. | [`practical 4.cpp`](./practical%204.cpp)<br>*(Input: [`4_input.cpp`](./practical%204_input.cpp))* |
 | **05** | **The `this` Pointer** | **Online Admissions Portal:** Attribute-parameter identifier collision resolution within constructor scope using explicit `this->` reference. | [`practical 5.cpp`](./practical%205.cpp)<br>*(Input: [`5_input.cpp`](./practical%205_input.cpp))* |
 | **06** | **Destructors & Lifecycle** | **Recruitment Pipeline Buffer:** Demonstrating deterministic memory release and notification events during stack unwinding and scope termination. | [`practical 6.cpp`](./practical%206.cpp)<br>*(Input: [`6_input.cpp`](./practical%206_input.cpp))* |
 | **07** | **Single Inheritance** | **Academic Hierarchy:** Derivation of `Student` from base `Person`, inheriting personal attributes while augmenting academic-specific fields. | [`practical 7.cpp`](./practical%207.cpp)<br>*(Input: [`7_input.cpp`](./practical%207_input.cpp))* |
@@ -95,6 +95,7 @@ object-oriented-programming-cpp/
 ├── practical 2.cpp          # Practical 2: Array of Objects
 ├── practical 3.cpp          # Practical 3: Encapsulation & Data Hiding
 ├── practical 4.cpp          # Practical 4: Default & Parameterized Constructors
+├── practical 4_input.cpp    # Practical 4: Interactive Input Variant
 ├── practical 5.cpp          # Practical 5: 'this' Pointer Disambiguation
 ├── practical 5_input.cpp    # Practical 5: Interactive Input Variant
 ├── practical 6.cpp          # Practical 6: Destructors & Scope Destruction
