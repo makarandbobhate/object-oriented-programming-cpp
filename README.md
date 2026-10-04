@@ -21,17 +21,17 @@ This repository serves as a practical implementation log for the OOPS curriculum
 
 ## 📂 Index of Practicals
 
-| Practical | Concept Covered | Brief Description |
+| Practical | Concept Covered | Problem Statement |
 | :---: | :--- | :--- |
-| **[Practical 1](practical%201.cpp)** | **Classes & Objects** | Digital book inventory system capturing basic I/O operations. |
+| **[Practical 1](practical%201.cpp)** | **Classes & Objects** | A bookstore is introducing a digital inventory system to organize its collection of books. Design a Book class that stores essential book details and allows the staff to record and display the information whenever required. |
 | **[Practical 2](practical%202.cpp)** | **Array of Objects** | College record digitization system managing multiple student entries. |
-| **[Practical 3](practical%203.cpp)** | **Encapsulation** | Employee record system demonstrating private access and authorized data retrieval. |
+| **[Practical 3](practical%203.cpp)** | **Encapsulation** | The Human Resources department needs a simple application to organize employee information. Design an Employee class that stores employee details and enables authorized staff to view the stored information whenever required. |
 | **[Practical 4](practical%204.cpp)** | **Constructors** | Bookstore simulation utilizing both Default and Parameterized constructors. |
-| **[Practical 5](practical%205.cpp)** | **The `this` Pointer** | Student detail management showcasing constructor scope resolution. *(Includes an interactive `_input` variant)*. |
-| **[Practical 6](practical%206.cpp)** | **Destructors** | Employee details system tracking object creation and automated memory cleanup. *(Includes an interactive `_input` variant)*. |
+| **[Practical 5](practical%205.cpp)** | **The `this` Pointer** | A college admission portal allows students to update their profiles online. Design a student class that correctly assigns the submitted details to the respective data members, even when the input variable names are the same as the class attributes. *(Includes `_input` variant)*. |
+| **[Practical 6](practical%206.cpp)** | **Destructors** | An HR application creates employee records temporarily while processing recruitment data. Design an Employee class that displays appropriate messages when employee records are created and automatically removed from memory after processing is completed. *(Includes `_input` variant)*. |
 | **[Practical 7](practical%207.cpp)** | **Single Inheritance** | Hierarchical link between a base `Person` class and a derived `Student` class. |
-| **[Practical 8](practical%208.cpp)** | **Multilevel Inheritance** | Multi-tier class structure: `Person` ➔ `Employee` ➔ `Manager`. |
-| **[Practical 9](practical%209.cpp)** | **Hierarchical Inheritance** | One base class (`Vehicle`) branching into multiple derived classes (`Car`, `Truck`). |
+| **[Practical 8](practical%208.cpp)** | **Multilevel Inheritance** | An organization maintains records of its workforce. Every manager is an employee, and every employee is a person. Design an application that progressively extends the available information at each level while reusing the common details already defined. |
+| **[Practical 9](practical%209.cpp)** | **Hierarchical Inheritance** | A transport management system maintains common information for all vehicles while storing additional details specific to different vehicle categories. Design an application that organizes these records efficiently using inheritance. |
 
 ---
 
