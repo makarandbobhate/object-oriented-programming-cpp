@@ -40,3 +40,9 @@
 *.sln.docstates
 .DS_Store
 Thumbs.db
+
+# Output generator build files
+outputs/.build/
+
+# Input files
+inputs/
