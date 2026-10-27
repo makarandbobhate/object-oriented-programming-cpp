@@ -37,6 +37,7 @@ This laboratory suite targets mastery over foundational software engineering pri
 * **Object Lifecycle Management:** Deterministic resource initialization via default, parameterized, and copy constructors; systematic destruction via RAII-compliant destructors.
 * **Scope Resolution & Disambiguation:** Resolving namespace and attribute collisions using the implicit `this` pointer.
 * **Polymorphic & Hierarchical Architecture:** Code reuse and extensible taxonomies via Single, Multilevel, and Hierarchical inheritance models.
+* **Generic Programming & Templates:** Type-independent function and class templates enabling code reusability and compile-time polymorphism.
 
 ---
 
@@ -53,6 +54,9 @@ This laboratory suite targets mastery over foundational software engineering pri
 | **07** | **Single Inheritance** | **Academic Hierarchy:** Derivation of `Student` from base `Person`, inheriting personal attributes while augmenting academic-specific fields. | [`practical 7.cpp`](./practical%207.cpp)<br>*(Input: [`7_input.cpp`](./practical%207_input.cpp))* |
 | **08** | **Multilevel Inheritance** | **Workforce Hierarchy:** Multi-tier architectural inheritance pattern extending `Person` ➔ `Employee` ➔ `Manager` across layered data planes. | [`practical 8.cpp`](./practical%208.cpp)<br>*(Input: [`8_input.cpp`](./practical%208_input.cpp))* |
 | **09** | **Hierarchical Inheritance** | **Fleet Management System:** Single generalized base specification (`Vehicle`) branching into specialized domains (`Car`, `Truck`). | [`practical 9.cpp`](./practical%209.cpp)<br>*(Input: [`9_input.cpp`](./practical%209_input.cpp))* |
+| **10** | **Function Templates** | **Generic Maximum Comparison:** Function template `myMax` evaluating maximum values across heterogeneous types (integers, floating-point numbers). | [`practical 10.cpp`](./practical%2010.cpp) |
+| **11** | **Function Templates** | **Generic Swap Utility:** In-place value exchange across data types using call-by-reference function template `mySwap`. | [`practical 11.cpp`](./practical%2011.cpp) |
+| **12** | **Class Templates** | **Generic Data Container:** Type-parameterized class template `Data` encapsulating and presenting arbitrary values (`int`, `double`, `string`). | [`practical 12.cpp`](./practical%2012.cpp) |
 
 ---
 
@@ -105,7 +109,10 @@ object-oriented-programming-cpp/
 ├── practical 8.cpp          # Practical 8: Multilevel Inheritance
 ├── practical 8_input.cpp    # Practical 8: Interactive Input Variant
 ├── practical 9.cpp          # Practical 9: Hierarchical Inheritance
-└── practical 9_input.cpp    # Practical 9: Interactive Input Variant
+├── practical 9_input.cpp    # Practical 9: Interactive Input Variant
+├── practical 10.cpp         # Practical 10: Function Template (myMax)
+├── practical 11.cpp         # Practical 11: Function Template (mySwap)
+└── practical 12.cpp         # Practical 12: Class Template (Data)
 ```
 
 ---
