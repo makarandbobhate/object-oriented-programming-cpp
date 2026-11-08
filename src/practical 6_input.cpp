@@ -7,7 +7,8 @@
  */
 
 #include <iostream>
-#include <string> 
+#include <limits>
+#include <string>
 
 using namespace std;
 
@@ -25,7 +26,7 @@ public:
     }
 
     // Display employee details
-    void display() {
+    void display() const {
         cout << "\n--- Employee Details ---" << endl;
         cout << "Employee ID: " << emp_id << endl;
         cout << "Employee Name: " << name << endl;
@@ -44,7 +45,7 @@ int main() {
     // Taking input from the user
     cout << "Enter Employee ID: ";
     cin >> id;
-    cin.ignore();
+    cin.ignore(numeric_limits<streamsize>::max(), '\n');
 
     cout << "Enter Employee Name: ";
     getline(cin, name);

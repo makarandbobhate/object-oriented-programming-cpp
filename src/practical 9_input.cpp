@@ -7,6 +7,7 @@
  */
 
 #include <iostream>
+#include <limits>
 #include <string>
 
 using namespace std;
@@ -22,6 +23,8 @@ public:
         registrationNo = reg;
         brand = b;
     }
+
+    virtual ~Vehicle() = default;
 
     void displayCommon() const {
         cout << "Registration: " << registrationNo << endl;
@@ -80,7 +83,7 @@ int main() {
     getline(cin, brand);
     cout << "Enter Seating Capacity: ";
     cin >> seats;
-    cin.ignore();
+    cin.ignore(numeric_limits<streamsize>::max(), '\n');
 
     Car userCar(reg, brand, seats);
 

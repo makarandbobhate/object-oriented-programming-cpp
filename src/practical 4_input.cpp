@@ -7,6 +7,7 @@
  */
 
 #include <iostream>
+#include <limits>
 #include <string>
 
 using namespace std;
@@ -62,7 +63,7 @@ int main() {
     cout << "\n[Input Custom Book Details for Parameterized Constructor]" << endl;
     cout << "Enter Book ID: ";
     cin >> id;
-    cin.ignore();
+    cin.ignore(numeric_limits<streamsize>::max(), '\n');
 
     cout << "Enter Title: ";
     getline(cin, title);

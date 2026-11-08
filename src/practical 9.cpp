@@ -22,6 +22,8 @@ public:
         brand = b;
     }
 
+    virtual ~Vehicle() = default;
+
     void displayCommon() const {
         cout << "Registration No: " << registrationNo << endl;
         cout << "Brand: " << brand << endl;

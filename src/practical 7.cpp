@@ -23,6 +23,8 @@ public:
         age = a;
         contact = c;
     }
+
+    virtual ~Person() = default;
 };
 
 class Student : public Person {
@@ -36,7 +38,7 @@ public:
         branch = b;
     }
 
-    void display() {
+    void display() const {
         cout << "Name: " << name << endl;
         cout << "Age: " << age << endl;
         cout << "Contact: " << contact << endl;

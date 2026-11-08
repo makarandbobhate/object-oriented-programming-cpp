@@ -19,8 +19,8 @@ private:
     double salary;
 
 public:
-    // Manual setup function to populate data
-    void setDetails(int empid, string empName, string empDept, double empSal) {
+    // Manual setup function to populate data using const references
+    void setDetails(int empid, const string &empName, const string &empDept, double empSal) {
         id = empid;
         name = empName;
         department = empDept;

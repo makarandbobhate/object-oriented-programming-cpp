@@ -7,6 +7,7 @@
  */
 
 #include <iostream>
+#include <limits>
 #include <string>
 
 using namespace std;
@@ -24,6 +25,8 @@ public:
         age = a;
         contact = c;
     }
+
+    virtual ~Person() = default;
 };
 
 // Derived Class inheriting from Person
@@ -59,14 +62,14 @@ int main() {
 
     cout << "Enter Age: ";
     cin >> age;
-    cin.ignore();
+    cin.ignore(numeric_limits<streamsize>::max(), '\n');
 
     cout << "Enter Contact Number: ";
     getline(cin, contact);
 
     cout << "Enter Roll Number: ";
     cin >> rollNumber;
-    cin.ignore();
+    cin.ignore(numeric_limits<streamsize>::max(), '\n');
 
     cout << "Enter Branch: ";
     getline(cin, branch);

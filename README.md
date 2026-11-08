@@ -45,18 +45,18 @@ This laboratory suite targets mastery over foundational software engineering pri
 
 | Practical | Core OOP Paradigm | Problem Statement & Specification | Code Source |
 | :---: | :--- | :--- | :---: |
-| **01** | **Classes & Objects** | **Digital Book Inventory System:** Design a standalone `Book` entity capturing ISBN, metadata, and price with secure I/O streams. | [`practical 1.cpp`](./practical%201.cpp) |
-| **02** | **Array of Objects** | **College Record Digitization:** Array-driven database for record management, input parsing, dynamic iteration, and roll number search. | [`practical 2.cpp`](./practical%202.cpp) |
-| **03** | **Data Encapsulation** | **HR Access Control System:** Private attribute isolation in an `Employee` entity with role-gated access methods enforcing authorization boundaries. | [`practical 3.cpp`](./practical%203.cpp) |
-| **04** | **Constructors** | **Constructors Overloading:** Bookstore module evaluating explicit initialization paths using default and parameterized constructors. | [`practical 4.cpp`](./practical%204.cpp)<br>*(Input: [`4_input.cpp`](./practical%204_input.cpp))* |
-| **05** | **The `this` Pointer** | **Online Admissions Portal:** Attribute-parameter identifier collision resolution within constructor scope using explicit `this->` reference. | [`practical 5.cpp`](./practical%205.cpp)<br>*(Input: [`5_input.cpp`](./practical%205_input.cpp))* |
-| **06** | **Destructors & Lifecycle** | **Recruitment Pipeline Buffer:** Demonstrating deterministic memory release and notification events during stack unwinding and scope termination. | [`practical 6.cpp`](./practical%206.cpp)<br>*(Input: [`6_input.cpp`](./practical%206_input.cpp))* |
-| **07** | **Single Inheritance** | **Academic Hierarchy:** Derivation of `Student` from base `Person`, inheriting personal attributes while augmenting academic-specific fields. | [`practical 7.cpp`](./practical%207.cpp)<br>*(Input: [`7_input.cpp`](./practical%207_input.cpp))* |
-| **08** | **Multilevel Inheritance** | **Workforce Hierarchy:** Multi-tier architectural inheritance pattern extending `Person` ➔ `Employee` ➔ `Manager` across layered data planes. | [`practical 8.cpp`](./practical%208.cpp)<br>*(Input: [`8_input.cpp`](./practical%208_input.cpp))* |
-| **09** | **Hierarchical Inheritance** | **Fleet Management System:** Single generalized base specification (`Vehicle`) branching into specialized domains (`Car`, `Truck`). | [`practical 9.cpp`](./practical%209.cpp)<br>*(Input: [`9_input.cpp`](./practical%209_input.cpp))* |
-| **10** | **Function Templates** | **Generic Maximum Comparison:** Function template `myMax` evaluating maximum values across heterogeneous types (integers, floating-point numbers). | [`practical 10.cpp`](./practical%2010.cpp) |
-| **11** | **Function Templates** | **Generic Swap Utility:** In-place value exchange across data types using call-by-reference function template `mySwap`. | [`practical 11.cpp`](./practical%2011.cpp) |
-| **12** | **Class Templates** | **Generic Data Container:** Type-parameterized class template `Data` encapsulating and presenting arbitrary values (`int`, `double`, `string`). | [`practical 12.cpp`](./practical%2012.cpp) |
+| **01** | **Classes & Objects** | **Digital Book Inventory System:** Design a standalone `Book` entity capturing ISBN, metadata, and price with secure I/O streams. | [`practical 1.cpp`](./src/practical%201.cpp) |
+| **02** | **Array of Objects** | **College Record Digitization:** Array-driven database for record management, input parsing, dynamic iteration, and roll number search. | [`practical 2.cpp`](./src/practical%202.cpp) |
+| **03** | **Data Encapsulation** | **HR Access Control System:** Private attribute isolation in an `Employee` entity with role-gated access methods enforcing authorization boundaries. | [`practical 3.cpp`](./src/practical%203.cpp) |
+| **04** | **Constructors** | **Constructors Overloading:** Bookstore module evaluating explicit initialization paths using default and parameterized constructors. | [`practical 4.cpp`](./src/practical%204.cpp)<br>*(Input: [`4_input.cpp`](./src/practical%204_input.cpp))* |
+| **05** | **The `this` Pointer** | **Online Admissions Portal:** Attribute-parameter identifier collision resolution within constructor scope using explicit `this->` reference. | [`practical 5.cpp`](./src/practical%205.cpp)<br>*(Input: [`5_input.cpp`](./src/practical%205_input.cpp))* |
+| **06** | **Destructors & Lifecycle** | **Recruitment Pipeline Buffer:** Demonstrating deterministic memory release and notification events during stack unwinding and scope termination. | [`practical 6.cpp`](./src/practical%206.cpp)<br>*(Input: [`6_input.cpp`](./src/practical%206_input.cpp))* |
+| **07** | **Single Inheritance** | **Academic Hierarchy:** Derivation of `Student` from base `Person`, inheriting personal attributes while augmenting academic-specific fields. | [`practical 7.cpp`](./src/practical%207.cpp)<br>*(Input: [`7_input.cpp`](./src/practical%207_input.cpp))* |
+| **08** | **Multilevel Inheritance** | **Workforce Hierarchy:** Multi-tier architectural inheritance pattern extending `Person` ➔ `Employee` ➔ `Manager` across layered data planes. | [`practical 8.cpp`](./src/practical%208.cpp)<br>*(Input: [`8_input.cpp`](./src/practical%208_input.cpp))* |
+| **09** | **Hierarchical Inheritance** | **Fleet Management System:** Single generalized base specification (`Vehicle`) branching into specialized domains (`Car`, `Truck`). | [`practical 9.cpp`](./src/practical%209.cpp)<br>*(Input: [`9_input.cpp`](./src/practical%209_input.cpp))* |
+| **10** | **Function Templates** | **Generic Maximum Comparison:** Function template `myMax` evaluating maximum values across heterogeneous types (integers, floating-point numbers). | [`practical 10.cpp`](./src/practical%2010.cpp) |
+| **11** | **Function Templates** | **Generic Swap Utility:** In-place value exchange across data types using call-by-reference function template `mySwap`. | [`practical 11.cpp`](./src/practical%2011.cpp) |
+| **12** | **Class Templates** | **Generic Data Container:** Type-parameterized class template `Data` encapsulating and presenting arbitrary values (`int`, `double`, `string`). | [`practical 12.cpp`](./src/practical%2012.cpp) |
 
 ---
 
@@ -72,7 +72,7 @@ All practical files are self-contained and require standard ISO C++ compilation.
 
 ```bash
 # General syntax
-g++ -std=c++17 -Wall -Wextra "practical <N>.cpp" -o output
+g++ -std=c++17 -Wall -Wextra "src/practical <N>.cpp" -o output
 
 # Windows execution
 ./output.exe
@@ -83,7 +83,7 @@ g++ -std=c++17 -Wall -Wextra "practical <N>.cpp" -o output
 
 #### Example (Practical 1):
 ```bash
-g++ -std=c++17 "practical 1.cpp" -o book_inventory
+g++ -std=c++17 "src/practical 1.cpp" -o book_inventory
 ./book_inventory
 ```
 
@@ -95,24 +95,27 @@ g++ -std=c++17 "practical 1.cpp" -o book_inventory
 object-oriented-programming-cpp/
 ├── .gitignore               # Ignores build artifacts, executables (.exe, .o), and IDE configs
 ├── README.md                # Comprehensive documentation and practical directory
-├── practical 1.cpp          # Practical 1: Classes & Objects
-├── practical 2.cpp          # Practical 2: Array of Objects
-├── practical 3.cpp          # Practical 3: Encapsulation & Data Hiding
-├── practical 4.cpp          # Practical 4: Default & Parameterized Constructors
-├── practical 4_input.cpp    # Practical 4: Interactive Input Variant
-├── practical 5.cpp          # Practical 5: 'this' Pointer Disambiguation
-├── practical 5_input.cpp    # Practical 5: Interactive Input Variant
-├── practical 6.cpp          # Practical 6: Destructors & Scope Destruction
-├── practical 6_input.cpp    # Practical 6: Interactive Input Variant
-├── practical 7.cpp          # Practical 7: Single Inheritance
-├── practical 7_input.cpp    # Practical 7: Interactive Input Variant
-├── practical 8.cpp          # Practical 8: Multilevel Inheritance
-├── practical 8_input.cpp    # Practical 8: Interactive Input Variant
-├── practical 9.cpp          # Practical 9: Hierarchical Inheritance
-├── practical 9_input.cpp    # Practical 9: Interactive Input Variant
-├── practical 10.cpp         # Practical 10: Function Template (myMax)
-├── practical 11.cpp         # Practical 11: Function Template (mySwap)
-└── practical 12.cpp         # Practical 12: Class Template (Data)
+├── src/                     # C++ practical source code implementations
+│   ├── practical 1.cpp          # Practical 1: Classes & Objects
+│   ├── practical 2.cpp          # Practical 2: Array of Objects
+│   ├── practical 3.cpp          # Practical 3: Encapsulation & Data Hiding
+│   ├── practical 4.cpp          # Practical 4: Default & Parameterized Constructors
+│   ├── practical 4_input.cpp    # Practical 4: Interactive Input Variant
+│   ├── practical 5.cpp          # Practical 5: 'this' Pointer Disambiguation
+│   ├── practical 5_input.cpp    # Practical 5: Interactive Input Variant
+│   ├── practical 6.cpp          # Practical 6: Destructors & Scope Destruction
+│   ├── practical 6_input.cpp    # Practical 6: Interactive Input Variant
+│   ├── practical 7.cpp          # Practical 7: Single Inheritance
+│   ├── practical 7_input.cpp    # Practical 7: Interactive Input Variant
+│   ├── practical 8.cpp          # Practical 8: Multilevel Inheritance
+│   ├── practical 8_input.cpp    # Practical 8: Interactive Input Variant
+│   ├── practical 9.cpp          # Practical 9: Hierarchical Inheritance
+│   ├── practical 9_input.cpp    # Practical 9: Interactive Input Variant
+│   ├── practical 10.cpp         # Practical 10: Function Template (myMax)
+│   ├── practical 11.cpp         # Practical 11: Function Template (mySwap)
+│   └── practical 12.cpp         # Practical 12: Class Template (Data)
+└── outputs/                 # High-resolution terminal capture verification outputs
+    ├── practical 1.png ... practical 12.png
 ```
 
 ---

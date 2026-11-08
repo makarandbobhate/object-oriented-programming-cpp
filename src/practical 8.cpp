@@ -24,6 +24,8 @@ public:
         contact = c;
     }
 
+    virtual ~Person() = default;
+
     void displayPerson() const {
         cout << "Name: " << name << endl;
         cout << "Age: " << age << endl;

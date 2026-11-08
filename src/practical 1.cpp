@@ -7,6 +7,7 @@
  */
 
 #include <iostream>
+#include <limits>
 #include <string>
 
 using namespace std;
@@ -32,11 +33,11 @@ public:
 
         cout << "Enter Price: ";
         cin >> price;
-        cin.ignore();
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
     }
 
     // Function to display Book Info
-    void displayBook() {
+    void displayBook() const {
         cout << "\n--- Book Information ---" << endl;
         cout << "Title: " << title << endl;
         cout << "Author: " << author << endl;

@@ -1,9 +1,9 @@
 /**
- * @file practical 5_input.cpp
+ * @file practical 5.cpp
  * @author Makarand Pankaj Bobhate (Roll No: 09, Div: 5)
  * @institution MIT ADT University, School of AI
  * @course Object Oriented Programming (OOPS)
- * @brief Practical 5 (Interactive): Student Details with Console Input
+ * @brief Practical 5: Student Details ('this' Pointer Disambiguation)
  */
 
 #include <iostream>
@@ -26,7 +26,7 @@ public:
     }
 
     // Display student details
-    void displayDetails() {
+    void displayDetails() const {
         cout << "Student Details" << endl;
         cout << "Roll Number: " << rollNumber << endl;
         cout << "Name: " << name << endl;
@@ -35,28 +35,7 @@ public:
 };
 
 int main() {
-    int rollNumber;
-    string name;
-    string course;
-
-    cout << "Enter Roll Number: ";
-    cin >> rollNumber;
-    cin.ignore();
-
-    cout << "Enter Name: ";
-    getline(cin, name);
-
-    cout << "Enter Course: ";
-    getline(cin, course);
-
-    cout << endl;
-
-    // Displaying student details
-    Student s1(rollNumber, name, course);
+    Student s1(101, "Anjali", "Computer Science");
     s1.displayDetails();
-
-    cout << "\nPress Enter to exit...";
-    cin.get();
-
     return 0;
 }

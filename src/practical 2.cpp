@@ -7,6 +7,7 @@
  */
 
 #include <iostream>
+#include <limits>
 #include <string>
 
 using namespace std;
@@ -22,8 +23,13 @@ public:
     // Function to input student data
     void inputDetails() {
         cout << "Enter Roll Number: ";
-        cin >> rollNumber;
-        cin.ignore(); // Clear buffer before reading string input
+        while (!(cin >> rollNumber)) {
+            if (cin.eof()) return;
+            cout << "Invalid input. Enter numeric Roll Number: ";
+            cin.clear();
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+        }
+        cin.ignore(numeric_limits<streamsize>::max(), '\n'); // Clear buffer before reading string input
 
         cout << "Enter Name: ";
         getline(cin, name);
@@ -32,7 +38,12 @@ public:
         getline(cin, course);
 
         cout << "Enter Admission Year: ";
-        cin >> admissionYear;
+        while (!(cin >> admissionYear)) {
+            if (cin.eof()) return;
+            cout << "Invalid input. Enter numeric Admission Year: ";
+            cin.clear();
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+        }
 
         cout << "------------------------------------\n";
     }
@@ -67,7 +78,15 @@ int main() {
         cout << "3. Search Student by Roll Number\n";
         cout << "4. Exit\n";
         cout << "Enter your choice: ";
-        cin >> choice;
+        
+        if (!(cin >> choice)) {
+            if (cin.eof()) break;
+            cout << "\nInvalid choice! Please enter a number between 1 and 4.\n";
+            cin.clear();
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+            choice = 0;
+            continue;
+        }
 
         switch (choice) {
             case 1: {
@@ -102,7 +121,13 @@ int main() {
                     int searchRoll;
                     bool found = false;
                     cout << "\nEnter Roll Number to search: ";
-                    cin >> searchRoll;
+                    if (!(cin >> searchRoll)) {
+                        if (cin.eof()) break;
+                        cout << "Invalid input! Roll Number must be numeric.\n";
+                        cin.clear();
+                        cin.ignore(numeric_limits<streamsize>::max(), '\n');
+                        break;
+                    }
 
                     for (int i = 0; i < currentCount; i++) {
                         if (database[i].getRollNumber() == searchRoll) {

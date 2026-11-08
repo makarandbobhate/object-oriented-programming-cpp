@@ -19,13 +19,13 @@ private:
 public:
     // Constructor
     Employee(int id, string n) {
-        emp_id = id; // Fixed assignment bug: was emp_id - id
+        emp_id = id;
         name = n;
         cout << "Employee record created for " << name << endl;
     }
 
     // Display employee details
-    void display() {
+    void display() const {
         cout << "Employee ID: " << emp_id << endl;
         cout << "Employee Name: " << name << endl;
     }

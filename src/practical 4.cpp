@@ -36,7 +36,7 @@ public:
     }
 
     // Function to display book details
-    void display() {
+    void display() const {
         cout << "Book ID: " << bookID << endl;
         cout << "Title: " << title << endl;
         cout << "Author: " << author << endl;
