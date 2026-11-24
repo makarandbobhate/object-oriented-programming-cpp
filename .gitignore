@@ -41,9 +41,6 @@
 .DS_Store
 Thumbs.db
 
-# Output generator build files & scripts
-outputs/.build/
+# Build artifacts & generator script
+.build/
 generate_outputs.ps1
-
-# Input files
-inputs/

@@ -1,0 +1,4 @@
+The C++ Programming Language
+Bjarne Stroustrup
+978-0321563842
+899.5
